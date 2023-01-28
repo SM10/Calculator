@@ -1,0 +1,189 @@
+html, body{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    height: 100%;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: cadetblue;
+    border-radius: 1%;
+    width: 300px;
+    height: 500px;
+    border-style:solid;
+    border-color:black;
+    padding: 5px
+}
+
+.display{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 1%;
+    background-color: lightgrey;
+    border-style:solid;
+    border-color:black;
+    font-size: 80px;
+}
+
+.numpad{
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.numpad > *{
+    font-size: 30px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    border-radius: 5%;
+    border-style:solid;
+    border-color:black;
+}
+
+.operation{
+    background-color: goldenrod;
+}
+
+.operation:focus{
+    background-color: gold;
+}
+
+.number{
+    background-color: salmon;
+}
+
+.number:active{
+    background-color: lightsalmon;
+}
+
+.system{
+    background-color: green;
+}
+
+.system:active{
+    background-color: lightgreen;
+}
+
+.AC{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.backspace{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.percent{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.divide{
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.seven{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.eight{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.nine{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.multiply{
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.four{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.five{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.six{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.subtract{
+    grid-column: 4;
+    grid-row: 3;
+}
+
+.one{
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.two{
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.three{
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.add{
+    grid-column: 4;
+    grid-row: 4;
+}
+
+.zero{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 5;
+    width:auto;
+}
+
+.decimal{
+    grid-column: 3;
+    grid-row: 5;
+}
+
+.operation.equals{
+    grid-column: 4;
+    grid-row: 5;
+    background-color:tomato;
+}
+
+.equals:active{
+    background-color: pink;
+}
