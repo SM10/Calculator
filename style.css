@@ -17,7 +17,7 @@ body{
     align-items: center;
     background-color: cadetblue;
     border-radius: 1%;
-    width: 300px;
+    width: 400px;
     height: 500px;
     border-style:solid;
     border-color:black;
@@ -67,6 +67,14 @@ button{
 }
 
 .operation:focus{
+    background-color: gold;
+}
+
+.percent.operation{
+    background-color: goldenrod;
+}
+
+.percent.operation:active{
     background-color: gold;
 }
 
